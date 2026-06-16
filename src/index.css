@@ -1,0 +1,398 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#0a192f;
+  color:#ffffff;
+  font-family:"Segoe UI",sans-serif;
+  overflow-x:hidden;
+}
+
+/* =====================
+   CONTAINER
+===================== */
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:22px 5%;
+
+  background:rgba(10,25,47,.95);
+  backdrop-filter:blur(10px);
+
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+  font-size:1.8rem;
+  font-weight:700;
+  color:#64ffda;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#ccd6f6;
+  transition:.3s;
+}
+
+.nav-links a:hover{
+  color:#64ffda;
+}
+
+/* =====================
+   HERO
+===================== */
+
+.hero{
+  min-height:95vh;
+  display:flex;
+  align-items:center;
+}
+
+.hero .container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:80px;
+}
+
+.hero-left{
+  flex:1;
+}
+
+.hero-right{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.intro{
+  color:#64ffda;
+  margin-bottom:15px;
+  font-size:1rem;
+}
+
+.hero-left h1{
+  font-size:3rem;
+  margin-bottom:10px;
+}
+
+.hero-left h2{
+  font-size:4.5rem;
+  line-height:1.1;
+  color:#ccd6f6;
+  margin-bottom:25px;
+}
+
+.description{
+  color:#8892b0;
+  line-height:1.9;
+  max-width:700px;
+  margin-bottom:35px;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+
+.buttons{
+  display:flex;
+  gap:15px;
+}
+
+.btn-primary{
+  text-decoration:none;
+
+  background:#64ffda;
+  color:#0a192f;
+
+  padding:14px 28px;
+
+  border-radius:12px;
+
+  font-weight:700;
+
+  transition:.3s;
+}
+
+.btn-primary:hover{
+  transform:translateY(-4px);
+}
+
+.btn-secondary{
+  text-decoration:none;
+
+  border:1px solid #64ffda;
+
+  color:#64ffda;
+
+  padding:14px 28px;
+
+  border-radius:12px;
+
+  transition:.3s;
+}
+
+.btn-secondary:hover{
+  background:rgba(100,255,218,.1);
+}
+
+/* =====================
+   PROFILE
+===================== */
+
+.profile-circle{
+  width:340px;
+  height:340px;
+
+  border-radius:50%;
+
+  background:linear-gradient(
+    135deg,
+    #64ffda,
+    #38bdf8
+  );
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  color:#0a192f;
+
+  font-size:5rem;
+  font-weight:700;
+
+  box-shadow:
+  0 0 20px rgba(100,255,218,.4),
+  0 0 60px rgba(100,255,218,.2),
+  0 0 120px rgba(100,255,218,.1);
+}
+
+/* =====================
+   SECTION
+===================== */
+
+.section{
+  padding:110px 0;
+}
+
+.section-title{
+  font-size:2.5rem;
+  margin-bottom:40px;
+}
+
+.section-title span{
+  color:#64ffda;
+}
+
+/* =====================
+   CARD STYLE
+===================== */
+
+.experience-card,
+.project-card,
+.contact-card{
+  background:#112240;
+
+  border:1px solid rgba(255,255,255,.05);
+
+  border-radius:20px;
+
+  padding:35px;
+
+  margin-bottom:25px;
+
+  transition:.3s;
+}
+
+.experience-card:hover,
+.project-card:hover{
+  transform:translateY(-5px);
+}
+
+.experience-card h3,
+.project-card h3{
+  margin-bottom:12px;
+}
+
+.experience-card h4{
+  color:#64ffda;
+  margin-bottom:20px;
+}
+
+.experience-card ul{
+  padding-left:20px;
+}
+
+.experience-card li{
+  color:#8892b0;
+  margin-bottom:10px;
+  line-height:1.7;
+}
+
+/* =====================
+   PUBLICATION LINK
+===================== */
+
+.project-card a{
+  display:inline-block;
+  margin-top:15px;
+
+  color:#64ffda;
+  text-decoration:none;
+}
+
+.project-card a:hover{
+  text-decoration:underline;
+}
+
+/* =====================
+   SKILLS & CERTS
+===================== */
+
+.skills-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(220px,1fr));
+
+  gap:20px;
+}
+
+.skill-card{
+  background:#112240;
+
+  border:1px solid rgba(255,255,255,.05);
+
+  padding:25px;
+
+  border-radius:15px;
+
+  text-align:center;
+
+  font-weight:600;
+
+  color:#ccd6f6;
+
+  transition:.3s;
+}
+
+.skill-card:hover{
+  transform:translateY(-5px);
+  border-color:#64ffda;
+}
+
+/* =====================
+   PROJECTS GRID
+===================== */
+
+.projects-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(300px,1fr));
+
+  gap:25px;
+}
+
+.project-card p{
+  color:#8892b0;
+  line-height:1.8;
+}
+
+/* =====================
+   CONTACT
+===================== */
+
+.contact-card p{
+  color:#8892b0;
+  margin-bottom:15px;
+}
+
+.contact-card a{
+  color:#64ffda;
+  text-decoration:none;
+}
+
+.contact-card a:hover{
+  text-decoration:underline;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+.footer{
+  text-align:center;
+
+  padding:40px;
+
+  color:#8892b0;
+
+  border-top:
+  1px solid rgba(255,255,255,.05);
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media(max-width:900px){
+
+  .hero .container{
+    flex-direction:column-reverse;
+    text-align:center;
+  }
+
+  .hero-left h1{
+    font-size:2.2rem;
+  }
+
+  .hero-left h2{
+    font-size:3rem;
+  }
+
+  .profile-circle{
+    width:220px;
+    height:220px;
+    font-size:3rem;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+}
